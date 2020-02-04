@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>proj5</title>
+</head>
+<body>
+  <h1>Data Binding</h1>
+  <h3>Property Binding</h3>
+  <div[innerText]="'Hello'"></div>
+  <div[innerText]="message"></div>
+  <h3>Attribute Binding</h3>
+  <input type="text"[attr.value]="name"/>
+  <h3>Event Binding</h3>
+  <div(mouseMove)="showMouse"($event)">
+    this is some text
+  </div>
+  <h3>class and style Binding</h3>
+  <div[class.big]="isBig"
+  [style.background-color]="isBig?'silver':'blue'">A simple message!</div>
+  <button(click)="toggleBig()"></button>
+  <p></p>
+  <input type="checkbox"#big(click)="true"/>Big
+  <input type="checkbox"#bright(click)="true"/>Bright
+  <div[style.font-size]="big.checked?'red':'black'">Another message!</div>
+</body>
+</html>
