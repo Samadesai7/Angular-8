@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>proj4</title>
+</head>
+<body>
+  <section>
+  <h2> {{Message}}</h2>
+  <h3>Angular {{Version}} Topics </h3>
+  <!-- <ol> 
+    <li *ngFor="let opic of Topics">
+      {{Topic}}
+    </li>
+   </ol> -->
+  <div>
+    Enter Topic:
+    <input type="text" placeholder="Topic Name" #currentTopic/>
+    <button type="button"(click)="addTopic(currentTopic.value)"> AddTopic </button>
+    <button type="button"(click)="searchTopic(currentTopic.value)">Search</button>
+    <button type="button"(click)="deleteTopics(currentTopic.value)">Delete</button>
+</div>
+<br><br>
+<table>
+  <thead>
+    <tr>
+      <td> Topic Id</td>
+      <td>Topic Name</td>
+      <td>Action</td>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i=index;let Topic of Topics">
+      <td>
+        {{i+1}}
+      </td>
+      <td>
+        {{Topic}}
+      </td>
+      <td>
+        <button type="button"(click)="deleteTopics(i)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+   <tr>
+     <td colSpan=3>No.Of Topics:{{Topics.length}}</td>
+   </tr>
+  </tfoot>
+</table> 
+</section>
+</body>
+</html>

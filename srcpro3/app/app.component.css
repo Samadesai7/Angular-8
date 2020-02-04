@@ -1,0 +1,23 @@
+h2{
+    background-color:ghostwhite;
+    text-align: center;
+}
+h3{
+    background-color:orange;
+    text-align: center;
+}
+thead,tbody,tr,td,table{
+    border:2px solid black;
+    background-color:cornsilk;
+    text-align:left;
+    
+     
+}
+button{
+    color:white;
+    background-color: black;
+}
+div{
+    color: royalblue;
+    text-align: center;
+}
