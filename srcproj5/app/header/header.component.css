@@ -1,0 +1,10 @@
+header{
+    margin:10px 10px 0px 10px;
+    background-color:green;
+    color:yellow;
+    text-align:center;
+}
+header img{
+    width:100px;
+    height:100px;
+}
